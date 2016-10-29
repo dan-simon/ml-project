@@ -1,0 +1,1 @@
+This is a repository containg a conjecture, and information about it. The conjecture, and its consequences, are the topic of the repository creator's project. Whoever you are, if you prove of disprove the conjecture herein, or make any progress on it, let me know.
