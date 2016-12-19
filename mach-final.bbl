@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{rectangles-ngons}
+A.~Blumer, A.~Ehrenfeucht, D.~Haussler, and M.~K. Warmuth.
+\newblock {Learnability} and the {Vapnik}-{Chervonenkis} {Dimension}.
+\newblock {\em Journal of the ACM}, 36:929--965, 1989.
+
+\bibitem{spheres}
+R.~M. Dudley.
+\newblock {Balls} in $\mathbb{{R}}^k$ {Do Not Cut All Subsets} of $k + 2$
+  {Points}.
+\newblock {\em Advances in Mathematics}, 31:306--308, 1979.
+
+\bibitem{thisclass}
+M.~Mohri.
+\newblock Foundations of {Machine} {Learning}, Fall 2016.
+
+\bibitem{ellipsoids}
+K.~I. Yohji~Akama.
+\newblock {V}{C} dimension of ellipsoids, 2011.
+
+\end{thebibliography}
