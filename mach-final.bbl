@@ -1,5 +1,9 @@
 \begin{thebibliography}{1}
 
+\bibitem{ellipsoids}
+Y.~Akama and K.~Irie.
+\newblock {V}{C} dimension of ellipsoids, 2011.
+
 \bibitem{rectangles-ngons}
 A.~Blumer, A.~Ehrenfeucht, D.~Haussler, and M.~K. Warmuth.
 \newblock {Learnability} and the {Vapnik}-{Chervonenkis} {Dimension}.
@@ -14,9 +18,5 @@ R.~M. Dudley.
 \bibitem{thisclass}
 M.~Mohri.
 \newblock Foundations of {Machine} {Learning}, Fall 2016.
-
-\bibitem{ellipsoids}
-K.~I. Yohji~Akama.
-\newblock {V}{C} dimension of ellipsoids, 2011.
 
 \end{thebibliography}
