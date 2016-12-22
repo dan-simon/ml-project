@@ -1,0 +1,134 @@
+\documentclass[12pt]{amsart}
+
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[psamsfonts]{amssymb}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{enumerate}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{url}
+\usepackage{dsfont}
+
+\makeatletter
+\newtheorem*{rep@theorem}{\rep@title}
+\newcommand{\newreptheorem}[2]{%
+\newenvironment{rep#1}[1]{%
+ \def\rep@title{#2 \ref{##1}}%
+ \begin{rep@theorem}}%
+ {\end{rep@theorem}}}
+\makeatother
+
+\hypersetup{
+  colorlinks   = true,
+  urlcolor     = blue,
+  linkcolor    = blue,
+  citecolor   = blue
+}
+
+\let\Pr\undefined
+\def\Rset{\mathbb{R}}
+\def\Nset{\mathbb{N}}
+\def\vcdim{\text{VCdim}}
+\def\pdim{\text{Pdim}}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\Pr}{\mathbb{P}}
+\DeclareMathOperator*{\argmax}{\rm argmax}
+\DeclareMathOperator*{\argmin}{\rm argmin}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Tr}{Tr}
+\providecommand{\norm}[1]{\| #1 \|}
+\providecommand{\frobp}[2]{\langle#1, #2\rangle_F}
+\def\dqed{\relax\tag*{\qed}}
+
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\iprod}[2]{\left\langle #1, #2 \right\rangle}
+\newcommand{\h}{\widehat}
+\newcommand{\tl}{\widetilde}
+\newcommand{\Alpha}{{\boldsymbol \alpha}}
+\newcommand{\mat}[1]{{\mathbf #1}}
+\newcommand{\be}{\mat{e}}
+\newcommand{\bu}{\mat{u}}
+\newcommand{\bh}{\mat{h}}
+\newcommand{\n}{\mat{n}}
+\newcommand{\K}{\mat{K}}
+\newcommand{\N}{\mat{N}}
+\newcommand{\0}{\mat{0}}
+\newcommand{\w}{\mat{w}}
+\newcommand{\x}{\mat{x}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\Ind}{\mathds{1}}
+\newcommand{\1}{\mathds{1}}
+\newcommand{\R}{\mathfrak{R}}
+\newcommand{\e}{\epsilon}
+\newcommand{\EQ}{\gets}
+\newcommand{\wt}{\widetilde}
+\newcommand{\ssigma}{{\boldsymbol \sigma}}
+\newcommand{\tts}{\tt \small}
+\newcommand{\TO}{\mbox{ {\bf to }}}
+
+\newtheorem{theorem}{Theorem}
+\newreptheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newreptheorem{lemma}{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newreptheorem{corollary}{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newreptheorem{proposition}{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newreptheorem{conjecture}{Conjecture}
+
+\newcommand{\ignore}[1]{}
+\title[Not sure what to put here]
+{A (too-late found) proof that an approach mentioned is flawed}
+\author{Dan Simon}
+
+\begin{document}
+
+\maketitle
+
+\section{Disclamer}
+
+I was not aware of the material presented here until about an hour ago, when I thought of it. These notes (by which I mean this file) are hard to understand, but they're meant to be working notes that other people can ask about if they want to, not a formal submission to anything.
+
+Any ``we'' used in this file probably refers to me alone (or in some cases, me plus the reader).
+
+\section{Recalling the approach}
+
+We remember that we required pairs of hypotheses to differ in a particular way (which related to their neighborhood). We also remember that one attempt to solve the problem worked on the sphere one dimension lower, and restricted this requirement to antipodal hypotheses.
+
+Sample points can be considered as subsets of the hypothesis set.
+
+\section{Counterexample}
+
+Consider the sphere as $[0, 1]$ with $0$ and $1$ identified. Let our sample points be $(0, 1 / 3),$ $(1 / 3, 2 / 3),$ and $(2 / 3, 1).$ One can check that antipodal hypotheses differ but only $1$ point at a time can be shattered. However, $0$ and $1 / 3$ do not differ in the required way, but they are not antipodal.
+
+\section{Implications and further questions}
+
+Working on the sphere still seems to be a good idea (the proof in two dimensions only needed a circle), but we see that restricting to antipodes went too far. So the problem will now be considered as saying that any two hypotheses on the sphere differ and etc, not just antipodal hypotheses.
+
+Note also that we unfortunately lost compactness, and with it measurability. This is bad, but we can't do anything about it (as far as I see).
+
+\bibliographystyle{abbrv} 
+\bibliography{mach-final}
+\end{document}
